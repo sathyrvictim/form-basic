@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
 <form action="done.html" method="post">
+  <fieldset>
+    <legend>Contact Details</legend>
   <div>
     <label for="first_name">First Name:</label>
     <input type="text" name="first_name" id="first_name">
@@ -16,7 +18,6 @@
     <label for="last_name">Last Name:</label>
     <input type="text" name="last_name" id="last_name">
   </div>
-
     <div>
       <label for="age">Age:</label>
       <input type="number" name="age" id="age">
@@ -25,12 +26,67 @@
     <input type="email" id="user_email" name="email" placeholder="you@example.com">
     <label for="user_password">Password:</label>
     <input type="password" id="user_password" name="password">
-  
-    <div>
-      <button type="submit">Submit</button>
-    </div>
-  
+    
+    
+   <div>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount">
+   </div>
+   <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+   </div>
+   </fieldset>
+   <fieldset>
+  <legend>Delivery Details</legend>
 
+  <label for="street_address">Street Address:</label>
+  <input type="text" id="street_address" name="street_address">
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city">
+
+  <label for="zip_code">Zip Code:</label>
+  <input type="text" id="zip_code" name="zip_code">
+</fieldset>
+   
+   <div>
+    <textarea rows="20" cols="60">Some initial content</textarea>
+   </div>
+    
+    <fieldset>
+  <select name="Car">
+      <option value="mercedes">Mercedes</option>
+      <option value="tesla">Tesla</option>
+      <option value="volvo">Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="mini">Mini</option>
+      <option value="ford">Ford</option>
+  </select>
+<select name="fashion">
+  <optgroup label="Clothing">
+    <option value="t_shirt">T-Shirts</option>
+    <option value="sweater">Sweaters</option>
+    <option value="coats">Coats</option>
+  </optgroup>
+  <optgroup label="Foot Wear">
+    <option value="sneakers">Sneakers</option>
+    <option value="boots">Boots</option>
+    <option value="sandals">Sandals</option>
+  </optgroup>
+</select>
+
+<div>
+  <input type="checkbox" id="newsletter" name="news_letter" checked>
+  <label for="newsletter" >Send me the news letter</label>
+</div>
+</fieldset>
+
+<div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </div>
 </form>
 </body>
 </html>
